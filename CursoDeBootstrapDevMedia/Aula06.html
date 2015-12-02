@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 04</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Custom.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-4">
+                        1
+                    </div>
+                    <div class="col-xs-2">
+                        2
+                    </div>
+                    <div class="col-xs-3">
+                        3
+                    </div>
+                    <div class="col-xs-3">
+                        4
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-md-12">
+                        1
+                    </div>
+                    <div class="col-xs-2 col-md-12">
+                        2
+                    </div>
+                    <div class="col-xs-3 col-md-12">
+                        3
+                    </div>
+                    <div class="col-xs-3 col-md-12">
+                        4
+                    </div>
+                </div>
+                Texto 1
+            </div>
+            <div class="col-xs-6">
+                Texto 2
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-4">
+                4 posicoes
+            </div>
+            <div class="col-xs-6 col-xs-offset-6">Quero ocupar as 6 ultimas colunas</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                10 espaços centrais
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-10 col-md-offset-2">
+                                Testando alinhamento
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(function () {
+        $('div').css({
+            "border-width": "1px",
+            "border-style": "solid"
+        });
+    })
+</script>
