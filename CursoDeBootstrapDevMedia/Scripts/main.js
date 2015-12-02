@@ -1,3 +1,3 @@
 ﻿$(function () {
-    alert("Ola");
+   
 });
