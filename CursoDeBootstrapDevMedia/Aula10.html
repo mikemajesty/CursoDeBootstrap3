@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 10</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Custom.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <!--class="sr-only" classe usada pada leitores de tela-->
+                        <label for="nome" class="col-xs-2 control-label">Nome Completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome Completo" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo" class="col-xs-2 control-label">Tipo:</label>
+                        <div class="col-xs-10">
+                            <select class="form-control">
+                                <option>
+                                    Pesso Física
+                                </option>
+                                <option>
+                                    Pesso Jurídica
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="selecione" class="col-xs-2 control-label">Selecione</label>
+                        <div class="col-xs-10">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="1" value="1" /> 1
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="2" value="2" /> 2
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="3" value="3" /> 3
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="selecione" class="col-xs-2 control-label">Seu email:</label>
+                        <div class="col-xs-10">
+                            <p class="form-control-static">Atendimento Mike@antendimento.com</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-offset-2 col-xs-10">
+                            <button class="btn btn-default btn-lg" type="submit">Salvar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form-group has-success">
+                <!--class="sr-only" classe usada pada leitores de tela-->
+                <label for="nome" class="col-xs-2 control-label">Idade:</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="idade" placeholder="Idade:" />
+                    <span class="glyphicon glyphicon-remove-sign form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-warning has-feedback">
+                <!--class="sr-only" classe usada pada leitores de tela-->
+                <label for="nome" class="col-xs-2 control-label">Estado:</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="idade" placeholder="estado:" />
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <!--class="sr-only" classe usada pada leitores de tela-->
+                <label for="nome" class="col-xs-2 control-label">sexo:</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="idade" placeholder="sexo:" />
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group">
+                <!--class="sr-only" classe usada pada leitores de tela-->
+                <label for="nome" class="col-xs-2 control-label">sexo:</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control input-lg" id="idade" placeholder="sexo:" />
+                    <input type="text" class="form-control input-sm" id="idade" placeholder="sexo:" />
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+            </div>
+            <hr />
+            <div class="form-group form-group-lg">
+                <!--class="sr-only" classe usada pada leitores de tela-->
+                <label for="nome" class="col-xs-2 control-label">sexo:</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="idade" placeholder="sexo:" />
+                    <input type="text" class="form-control"   id="idade" placeholder="sexo:" />
+                    <span class="help-block">Texto de ajuda para o campo</span>
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    //$(function () {
+    //    $('div').css({
+    //        "border-width": "1px",
+    //        "border-style": "solid"
+    //    });
+    //})
+</script>
