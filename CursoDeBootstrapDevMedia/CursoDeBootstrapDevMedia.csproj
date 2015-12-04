@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Aula13.html" />
     <Content Include="Aula12.html" />
     <Content Include="Aula11.html" />
     <Content Include="Aula10.html" />
