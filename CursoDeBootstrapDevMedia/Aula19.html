@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 19</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" media="all" />
+    <link href="Content/Custom.css" rel="stylesheet" media="all" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Tabs</h1>
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                </ul>
+            </div>
+            <hr />
+            <div class="col-xs-12">
+                <h2>Pills hori</h2>
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="active"><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                </ul>
+                <hr />
+                <h2>Pills verti</h2>
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li class="active"><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                </ul>
+                <hr />
+                <h2>Pills justificado</h2>
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li class="active"><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                </ul>
+                <hr />
+                <h2>Pills disabled</h2>
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="disabled"><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li><a href="#">Título do Livro</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                           Título do Link <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Título do Livro</a></li>
+                            <li><a href="#">Título do Livro</a></li>
+                            <li><a href="#">Título do Livro</a></li>
+                            <li><a href="#">Título do Livro</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(function () {
+        $('p').addClass("bg-color-padding");
+    })
+</script>
