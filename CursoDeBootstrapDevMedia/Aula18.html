@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 18</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" media="all" />
+    <link href="Content/Custom.css" rel="stylesheet" media="all" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <form>
+
+                    <hr />
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">Seu Email:</span>
+                        <input type="text" placeholder="Insira se email" class="form-control" />
+                        <span class="input-group-addon">@</span>
+                    </div>
+                    <hr />
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon">
+                            <input type="checkbox" />
+                        </span>
+                        <input type="text" required class="form-control" />
+                    </div>
+                    <hr />
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </span>
+                        <input type="text" class="form-control" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary">
+                                Buscar
+                            </button>
+                        </span>
+                    </div>
+                    <hr />
+                    <div class="input-group">
+                        <input type="text" class="form-control" />
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Selecione um Estado
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">RS</a>
+                                </li>
+                                <li>
+                                    <a href="#">RJ</a>
+                                </li>
+                                <li>
+                                    <a href="#">SP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+         
+           
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(function () {
+        $('p').addClass("bg-color-padding");
+    })
+</script>
