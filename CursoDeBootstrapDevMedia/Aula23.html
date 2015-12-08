@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 23</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" media="all" />
+    <link href="Content/Custom.css" rel="stylesheet" media="all" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>Alert <small>Elementos Alerts</small> </h1>
+                </div>
+                <div class="alert alert-success">
+                    Formulario enviado sucesso!
+                </div>
+                <div class="alert alert-warning">
+                    Cuidado ao preencher o formulario!
+                </div>
+                <div class="alert alert-info">
+                    Você preencheu o formulario corretamente!
+                </div>
+                <div class="alert alert-danger">
+                    Você preencheu o formulario incorretamente!
+                </div>
+
+
+                <div class="alert alert-success alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <span class="glyphicon glyphicon-ok-sign"></span>
+                    <b>Você </b>preencheu o formulario <a href="#" class="alert-link">incorretamente</a>!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>ProgressBar <small>Elementos ProgressBar</small></h1>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        <span class="sr-only">60% completo....</span>
+                    </div>
+                    
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        <span class="sr-only">60% completo....</span>
+                    </div>
+
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        <span class="sr-only">60% completo....</span>
+                    </div>
+
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(function () {
+        $('p').addClass("bg-color-padding");
+    })
+</script>
