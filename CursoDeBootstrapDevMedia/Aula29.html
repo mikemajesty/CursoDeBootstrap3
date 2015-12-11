@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 29</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" media="all" />
+    <link href="Content/Custom.css" rel="stylesheet" media="all" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>Single Toggle</h1>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="button">Single Toggle primary</button>
+                <button type="button" class="btn btn-default" data-toggle="button">Single Toggle default</button>
+                <button type="button" id="trocaestado" class="btn btn-primary"  data-loading-text="Carregando...">Carregar Algo</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>CheckBox - JS</h1>
+                </div>
+               <div class="btn-group" data-toggle="buttons">
+                   <label class="btn btn-primary active btnjs">
+                       <input type="checkbox" checked value="Valor 1" /> País
+                   </label>
+                   <label class="btn btn-primary btnjs">
+                       <input type="checkbox" value="Valor 2" /> Cidade
+                   </label>
+                   <label class="btn btn-primary btnjs">
+                       <input type="checkbox" value="Valor 3" /> Estado
+                   </label>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>RadioGroup - JS</h1>
+                </div>
+                <div class="btn-group " data-toggle="buttons">
+                    <label class="btn btn-primary active btnjs">
+                        <input type="radio" checked value="Valor 1" name="rdb1" id="rdb1"/> País
+                    </label>
+                    <label class="btn btn-primary btnjs">
+                        <input type="radio" checked value="Valor 2" name="rdb1" id="rdb2"/> Cidade
+                    </label>
+                    <label class="btn btn-primary btnjs">
+                        <input type="radio" checked value="Valor 3" name="rdb1" id="rdb3"/> País
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+
+<script type="text/javascript">
+    $('.btnjs').button();
+    $('#trocaestado').click(function () {
+        var btn = $(this);
+        btn.button("loading");
+
+        setTimeout(function () {
+            btn.button("reset");
+        },3000);
+    });
+</script>
