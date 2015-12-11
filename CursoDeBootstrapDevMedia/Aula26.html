@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 25</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" media="all" />
+    <link href="Content/Custom.css" rel="stylesheet" media="all" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>Janelas Modais</h1>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalAviso">Abrir Modal</button>
+                    <div class="modal fade" id="modalAviso" role="dialog" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dissmiss="modal">
+
+                                        <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true" class="sr-only">Fechar janela modal</span>
+                                        Fechar
+                                    </button>
+                                    <h4 class="modal-title"> Essa é uma janela modal</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Conteúdo da janela Modal</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dissmiss="modal" data-target="#modalAviso">
+                                        Fechar
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-dissmiss="modal" data-target="#modalAviso">Sair</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(function () {
+        $('#modalAviso').modal({backdrop:false,keyboard:false});
+        $('#modalAviso').modal("show");
+        setTimeout(function () {
+            $('#modalAviso').modal("hide");
+        },3000  );
+    })
+</script>
