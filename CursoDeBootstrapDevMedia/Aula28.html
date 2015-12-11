@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 28</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" media="all" />
+    <link href="Content/Custom.css" rel="stylesheet" media="all" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    <!--
+    muito pequeno = até 750. Usar col-xs 1 até 12;
+    pequeno = 750 até 970. Usar col-sm 1 até 12;
+    medio = 970 até 1170. Usar col-md 1 até 12;
+    grande = acima = 1170. Usar col-lg 1 até 12
+    -->
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>ToolTip</h1>
+                </div>
+                <button type="button" class="btn btn-default tpp" data-toggle="tooltip" data-placement="left">ToolTipo - Left</button>
+                <button type="button" class="btn btn-default tpp" data-toggle="tooltip" data-placement="right" title="Tooltip right">ToolTipo - Right</button>
+                <button type="button" class="btn btn-default tpp" data-toggle="tooltip" data-placement="top" title="Tooltip top">ToolTipo - Top</button>
+                <button type="button" class="btn btn-default tpp" data-toggle="tooltip" data-placement="bottom" title="Tooltip bottom">ToolTipo - bottom</button>
+            </div><div class="col-xs-12">
+                <div class="page-header">
+                    <h1>PopOver</h1>
+                </div>
+                <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="left" data-content="Conteúdo do Popover" data-container="body">ToolTipo - Left</button>
+                <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="right" data-content="Conteúdo do Popover" data-container="body">ToolTipo - Right</button>
+                <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="top" data-content="Conteúdo do Popover" data-container="body">ToolTipo - Top</button>
+                <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="bottom" data-content="Conteúdo do Popover" data-container="body">ToolTipo - bottom</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $('.tpp').tooltip({ animation: false, delay: { show: 100, hide: 5000 }, title: "Tooltip Left", trigger: 'click' });
+    $('.ppv').popover({ title: 'Título do POPOVER', trigger: 'hover focus' });
+</script>
