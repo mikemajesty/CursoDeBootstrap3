@@ -13,7 +13,7 @@
     <script src="../Scripts/jquery-1.9.1.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-offset="80">
     <!-- Menu da Applicação-->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -75,32 +75,69 @@
     </div>
     <!-- //Slider da Applicação-->
     <!-- Serviços -->
-    <div id="servicos">
-        <h1>Serviços</h1>
-    </div>
+    <section id="servicos">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="page-header"><h1>Serviços <small>Conheça o Que Fazemos</small></h1></div>
+            </div>
+
+        </div>
+    </section>
     <!-- //Serviços -->
     <!-- Potifólio -->
-    <div id="portifolio">
-        <h1>Portifólio</h1>
-    </div>
+    <section id="portifolio"  class="div_colorida">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="page-header"><h1>Portifólio <small>Conheça nossos Serviços</small></h1></div>
+            </div>
+        </div>
+    </section>
     <!-- //Potifólio -->
     <!-- Quem Somos -->
-    <div id="quemsomos">
-        <h1>Quem Somos</h1>
-    </div>
+    <section id="quemsomos">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="page-header"><h1>Quem Somos <small>Conheça Nossa História</small></h1></div>
+            </div>
+        </div>
+    </section>
     <!-- //Quem Somos -->
     <!-- Localização -->
-    <div id="localizacao">
-        <h1>Localização</h1>
-    </div>
+    <section id="localizacao" class="div_colorida">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="page-header"><h1>Localização <small>Veja Nossa localização</small></h1></div>
+            </div>
+        </div>
+    </section>
     <!-- //Localização -->
     <!-- Contatos -->
-    <div id="contatos">
-        <h1>Contatos</h1>
-    </div>
+    <section id="contatos">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="page-header"><h1>Contatos <small>Fale Conosco</small></h1></div>
+            </div>
+        </div>
+    </section>
     <!-- //Contatos -->
     <!-- Rodapé -->
     Rodapé
     <!-- //Rodapé -->
 </body>
 </html>
+<script>
+      $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+</script>
