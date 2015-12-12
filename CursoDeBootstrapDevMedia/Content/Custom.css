@@ -8,3 +8,14 @@
     padding-top:70px;
 }
 /*Projeto Prático*/
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+}
+
+body{
+    padding-top:30px;
+}
+.navbar-brand{
+      font-weight:700;
+}
