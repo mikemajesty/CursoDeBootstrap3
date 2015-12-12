@@ -96,8 +96,12 @@
     <Content Include="Img\1.png" />
     <Content Include="Img\2.png" />
     <Content Include="Img\3.png" />
+    <Content Include="Img\bgslider.png" />
     <Content Include="Img\grande.png" />
     <Content Include="Img\medium.png" />
+    <Content Include="Img\slider\slider1.jpg" />
+    <Content Include="Img\slider\slider2.jpg" />
+    <Content Include="Img\slider\slider3.jpg" />
     <Content Include="packages.config" />
     <Content Include="Projeto Pratico\Index.html" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
