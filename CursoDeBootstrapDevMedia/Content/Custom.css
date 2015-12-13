@@ -67,3 +67,6 @@ img.grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
+.padding_top{
+    padding-top:20px;
+}
