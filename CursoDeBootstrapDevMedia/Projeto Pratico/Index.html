@@ -13,8 +13,9 @@
     <script src="../Scripts/jquery-1.9.1.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
 </head>
-<body data-spy="scroll" data-offset="80">
+<body data-spy="scroll" data-offset="80" id="page-top">
     <!-- Menu da Applicação-->
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -27,7 +28,7 @@
             </div>
             <div class="collapse navbar-collapse" id="menu-navegacao">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#page-top"></a></li>
+                    <!--<li><a href="#page-top"></a></li>-->
                     <li><a href="#servicos" class="">Serviços</a></li>
                     <li><a href="#portifolio" class="">Portifólio</a></li>
                     <li><a href="#quemsomos" class="">Quem Somos</a></li>
@@ -37,6 +38,7 @@
             </div>
         </div>
     </nav>
+
     <!-- // Menu da Aplicação -->
     <!-- Slider da Applicação-->
     <div class="divslider">
@@ -77,15 +79,45 @@
     <!-- Serviços -->
     <section id="servicos">
         <div class="container">
-            <div class="col-xs-12">
-                <div class="page-header"><h1>Serviços <small>Conheça o Que Fazemos</small></h1></div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header"><h1>Serviços <small>Conheça o Que Fazemos</small></h1></div>
+                    <div class=""></div>
+                </div>
             </div>
-
+            <div class="row servico_item">
+                <div class="col-md-4 col-sm-4 col-xs-12 servico_item">
+                    <div>
+                        <img src="../Img/foto.jpg" class="img-responsive img-circle"/>
+                    </div>
+                    <h4>Desemvolvimento de sites</h4>
+                    <p>Descrição do serviço apresentado. texto texto texto texto texto texto texto texto texto texto</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 servico_item">
+                    <div>
+                        <img src="../Img/foto.jpg" class="img-responsive img-circle" />
+                    </div>
+                    <h4>E-Commerce</h4>
+                    <p>Descrição do serviço apresentado. texto texto texto texto texto texto texto texto texto texto</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 servico_item">
+                    <div>
+                        <img src="../Img/foto.jpg" class="img-responsive img-circle" />
+                    </div>
+                    <h4>Manutenção de Sistemas</h4>
+                    <p>Descrição do serviço apresentado. texto texto texto texto texto texto texto texto texto texto</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <a href="*" class="btn btn-link btn-lg servicos_btn_todososservicos">Click aqui para ver todos os nossso serviços</a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- //Serviços -->
     <!-- Potifólio -->
-    <section id="portifolio"  class="div_colorida">
+    <section id="portifolio" class="div_colorida">
         <div class="container">
             <div class="col-xs-12">
                 <div class="page-header"><h1>Portifólio <small>Conheça nossos Serviços</small></h1></div>
@@ -126,18 +158,22 @@
 </body>
 </html>
 <script>
-      $(function() {
-          $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
+    $(function () {
+
+
+        $('.nav.navbar-nav.navbar-right a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
             }
-          });
         });
+
+
+    });
 </script>

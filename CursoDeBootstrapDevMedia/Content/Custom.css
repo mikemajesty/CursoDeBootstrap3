@@ -33,3 +33,13 @@ section{
 .div_colorida{
     background: url(../Img/bgslider.png)
 }
+.servico_item *{
+    text-align:center;
+}
+.servico_item h4{
+    margin-top:50px;
+    font-size:30px;
+}
+.servicos_btn_todososservicos{
+    margin-top:25px;
+}
