@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel</title>
+
+
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="../Content/Custom.css" rel="stylesheet" />
+    <link href="../Content/Painel.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-offset="80" id="page-top">
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- //NavBar -->
+    <!-- Painel -->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-xs-12">
+                <div class="form_login">
+                    <h2>Efetue seu Login</h2>
+                    <form>
+                        <label class="sr-only" for="txtEmail">E-mail:</label>
+                        <input type="email" class="form-control input-lg" id="txtEmail" name="txtEmail" required placeholder="Seu E-Mail" />
+                        <label class="sr-only" for="txtSenha">Senha:</label>
+                        <input type="password" class="form-control input-lg" id="txtSenha" name="txtSenha" required placeholder="Sua Senha" />
+                        <div class="checkbox">
+                            <label for="ckbLembrarMe">
+                                <input type="checkbox" value="s" name="ckbLembrarMe" id="ckbLembrarMe" /> Lembre-me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <span>
+                                <i class="fa fa-share-square-o fa-2x"></i>
+                            </span>
+                            Logar
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Painel -->
+    <!-- Rodapé -->
+    <!--<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10">
+                    Informações Gerais da Empresa, Endereço, email, e tec
+                </div><div class="col-xs-2 text-right">
+                    <small>Dessenvolvido por: </small> <br />
+                    <strong>Mike Lima</strong>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+    <!-- //Rodapé -->
+</body>
+</html>
+<script>
+    $(function () {
+
+
+        $('.nav.navbar-nav.navbar-right a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+
+    });
+</script>

@@ -106,11 +106,13 @@
     <Content Include="Img\foto3.jpg" />
     <Content Include="Img\grande.png" />
     <Content Include="Img\medium.png" />
+    <Content Include="Img\new_year_background.png" />
     <Content Include="Img\slider\slider1.jpg" />
     <Content Include="Img\slider\slider2.jpg" />
     <Content Include="Img\slider\slider3.jpg" />
     <Content Include="packages.config" />
     <Content Include="Projeto Pratico\Index.html" />
+    <Content Include="Projeto Pratico\Login.html" />
     <Content Include="Projeto Pratico\Painel.html" />
     <Content Include="Projeto Pratico\QuemSomos.html" />
     <Content Include="Projeto Pratico\Portifolio.html" />
