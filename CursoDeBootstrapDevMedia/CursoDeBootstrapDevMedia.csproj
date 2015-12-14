@@ -106,6 +106,8 @@
     <Content Include="Img\slider\slider3.jpg" />
     <Content Include="packages.config" />
     <Content Include="Projeto Pratico\Index.html" />
+    <Content Include="Projeto Pratico\QuemSomos.html" />
+    <Content Include="Projeto Pratico\Portifolio.html" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
