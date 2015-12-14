@@ -1,5 +1,16 @@
 ﻿body{
     background: url(../Img/dark_embroidery.png);
     padding-top: 70px;
-    color:white;
+    color:gray;
+}
+.contetudo-painel{
+    background:url(../Img/new_year_background.png);
+    border-radius:8px;
+    border:1px solid #808080;
+    box-shadow: 5px 5px 5px #000;
+
+}
+.conteudo_painel_int{
+    padding:20px;
+
 }
