@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel</title>
+
+
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="../Content/Painel.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-offset="80" id="page-top">
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-cc-paypal fa-2x"></i></a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-wordpress fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user fa-2x"></i>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Minha Conta</a></li>
+                            <li><a href="#">Trocar Senha</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Efetuar Logoff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- //NavBar -->
+    <!-- Painel -->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-xs-3">
+                Coluna 1
+            </div>
+            <div class="col-xs-9 text-right">
+                Coluna 2
+            </div>
+        </div>
+    </div>
+    <!-- //Painel -->
+    <!-- Rodapé -->
+    <!--<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10">
+                    Informações Gerais da Empresa, Endereço, email, e tec
+                </div><div class="col-xs-2 text-right">
+                    <small>Dessenvolvido por: </small> <br />
+                    <strong>Mike Lima</strong>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+    <!-- //Rodapé -->
+</body>
+</html>
+<script>
+    $(function () {
+
+
+        $('.nav.navbar-nav.navbar-right a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+
+    });
+</script>

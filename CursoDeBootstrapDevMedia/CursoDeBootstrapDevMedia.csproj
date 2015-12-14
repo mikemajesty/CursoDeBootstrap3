@@ -93,10 +93,15 @@
     <Content Include="Aula06.html" />
     <Content Include="Aula05.html" />
     <Content Include="Aula04.html" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Painel.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Img\1.png" />
     <Content Include="Img\2.png" />
     <Content Include="Img\3.png" />
     <Content Include="Img\bgslider.png" />
+    <Content Include="Img\dark_embroidery.png" />
     <Content Include="Img\foto.jpg" />
     <Content Include="Img\foto3.jpg" />
     <Content Include="Img\grande.png" />
@@ -106,9 +111,15 @@
     <Content Include="Img\slider\slider3.jpg" />
     <Content Include="packages.config" />
     <Content Include="Projeto Pratico\Index.html" />
+    <Content Include="Projeto Pratico\Painel.html" />
     <Content Include="Projeto Pratico\QuemSomos.html" />
     <Content Include="Projeto Pratico\Portifolio.html" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
